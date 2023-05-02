@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  color: rgb(224, 17, 17);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+nav h2 {
+  max-width: 100px;
+}
+
+.page {
+  padding-top: 1rem;
+  min-height: calc(100vh - (6rem + 4rem));
+  
+}
+
+.hero {
+  height: 90vh;
+  position: relative;
+  margin-bottom: 2rem;
+  background: url('./pic-3.jpg.jpg') center/cover no-repeat;
+  border-radius: 0.25rem;
+}
+.hero-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+ 
+  
+}
+.hero-text {
+  color: white;
+  text-align: center;
+  background-color: black;
+  border-radius: 10px;
+  width: 40rem;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+}
+
+/* .wrapper {
+  border: 2px solid red;
+  overflow-x: scroll;
+  overflow-y: hidden;
+} */
+
+
+/* .card {
+  width: 30rem;
+  font-size: 1.5em;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow: auto;
+  border: 2px solid blue;
+} */
+
+.card {
+  display: grid;
+  grid-template-rows: min-content;
+  /* gap: var(--size-3); */
+  gap: 2em;
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+  margin-left: 2rem;
+  border-radius: 10px;
+  -webkit-overflow-scrolling: touch;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+/* .card-image {
+  border: 2px solid red;
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  
+} */
+
+.card-image {
+  /* padding: var(--size-3);
+  background: var(--surface-2);
+  border-radius: 10px; */
+  /* gap: 10; */
+  display: grid;
+  inline-size: 100%;
+  /* aspect-ratio: 16 / 9; */
+  aspect-ratio: 20 / 25;
+  
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.card-title {
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+
+.card-stats {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+   border-radius: 4px;
+}
+
+
